@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body class="bg-info">
+
+
+
+    <nav class="navbar navbar-expand-lg bg-primary p-4 shadow sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fs-3" href="../index.html"><b>Quiz App</b></a>
+          <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pages/addquiz.html">Add Quiz here </a>
+              </li>
+          
+          
+            </ul>
+        
+          </div>
+        </div>
+      </nav>
+
+
+
+
+    <h1 class="text-center my-4"> <b>ADD QUIZ</b> </h1>
+
+    <div class="container">
+        <div class="p-3">
+            <textarea name="" placeholder="Add question" class="p-3 fs-5 border-0 w-100 rounded sahdow bg-white" id="question"
+                cols="30" rows="5"></textarea>
+        </div>
+        <div class="p-3">
+            <div>
+                <input placeholder="Enter option" class="p-3 fs-5 border-0 rounded sahdow bg-white w-100" type="text" name=""
+                    id="option">
+            </div> <button onclick="addQuestion()" class="btn btn-outline-dark my-2 text-center" >Add option</button>
+            <div>
+                <ol id="optionparent"></ol>
+            </div>
+            <div>
+                <p class="bg-success rounded text-white p-2 fs-5" id="correctanswer">Correct Answers</p>
+            </div>
+            <div>
+                <button onclick="SubmitQuestion()" class="btn btn-outline-dark my-5 text-center" >Submit Question</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script type="module" src="addQuiz.js"></script>
+</body>
+
+</html>
